@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		982510281DF6C64C00F73D05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982510271DF6C64C00F73D05 /* AppDelegate.swift */; };
 		9825102A1DF6C64C00F73D05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982510291DF6C64C00F73D05 /* ViewController.swift */; };
-		9825102C1DF6C64C00F73D05 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9825102B1DF6C64C00F73D05 /* DataViewController.swift */; };
+		9825102C1DF6C64C00F73D05 /* MakeAQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9825102B1DF6C64C00F73D05 /* MakeAQuizView.swift */; };
 		9825102E1DF6C64C00F73D05 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9825102D1DF6C64C00F73D05 /* ModelController.swift */; };
 		982510311DF6C64C00F73D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9825102F1DF6C64C00F73D05 /* Main.storyboard */; };
 		982510331DF6C64C00F73D05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 982510321DF6C64C00F73D05 /* Assets.xcassets */; };
@@ -39,7 +39,7 @@
 		982510241DF6C64C00F73D05 /* Quizzles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizzles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		982510271DF6C64C00F73D05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		982510291DF6C64C00F73D05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9825102B1DF6C64C00F73D05 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		9825102B1DF6C64C00F73D05 /* MakeAQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAQuizView.swift; sourceTree = "<group>"; };
 		9825102D1DF6C64C00F73D05 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		982510301DF6C64C00F73D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		982510321DF6C64C00F73D05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 			children = (
 				982510271DF6C64C00F73D05 /* AppDelegate.swift */,
 				982510291DF6C64C00F73D05 /* ViewController.swift */,
-				9825102B1DF6C64C00F73D05 /* DataViewController.swift */,
+				9825102B1DF6C64C00F73D05 /* MakeAQuizView.swift */,
 				9825102D1DF6C64C00F73D05 /* ModelController.swift */,
 				9825102F1DF6C64C00F73D05 /* Main.storyboard */,
 				982510321DF6C64C00F73D05 /* Assets.xcassets */,
@@ -267,7 +267,7 @@
 			files = (
 				9825102A1DF6C64C00F73D05 /* ViewController.swift in Sources */,
 				9825102E1DF6C64C00F73D05 /* ModelController.swift in Sources */,
-				9825102C1DF6C64C00F73D05 /* DataViewController.swift in Sources */,
+				9825102C1DF6C64C00F73D05 /* MakeAQuizView.swift in Sources */,
 				982510281DF6C64C00F73D05 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

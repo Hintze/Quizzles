@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="xCB-De-nc4">
             <objects>
-                <viewController id="gvw-Ms-dx1" sceneMemberID="viewController">
+                <viewController id="gvw-Ms-dx1" customClass="ViewController" customModule="Quizzles" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QIp-cb-hGC"/>
                         <viewControllerLayoutGuide type="bottom" id="Lp8-Qs-vLR"/>
@@ -32,6 +32,9 @@
                                 <state key="normal" title="Make A Quiz">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="MakeAQuizButtonWithSender:" destination="gvw-Ms-dx1" eventType="touchUpInside" id="L4H-yB-DaM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TX-bp-3eo">
                                 <rect key="frame" x="117" y="375" width="140" height="30"/>
@@ -64,6 +67,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="87n-ok-auc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-458.39999999999998" y="-442.12893553223392"/>
+        </scene>
+        <!--MakeAQuizView-->
+        <scene sceneID="sZa-Et-5hz">
+            <objects>
+                <viewController id="Hf7-aY-0gO" userLabel="MakeAQuizView" customClass="MakeAQuizView" customModule="Quizzles" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q60-QP-xiC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jwf-yZ-nDk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZRw-Mq-Uvd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pX9-SU-T8E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="735" y="-442"/>
         </scene>
     </scenes>
     <resources>

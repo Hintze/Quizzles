@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		982510281DF6C64C00F73D05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982510271DF6C64C00F73D05 /* AppDelegate.swift */; };
-		9825102A1DF6C64C00F73D05 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982510291DF6C64C00F73D05 /* RootViewController.swift */; };
+		9825102A1DF6C64C00F73D05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982510291DF6C64C00F73D05 /* ViewController.swift */; };
 		9825102C1DF6C64C00F73D05 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9825102B1DF6C64C00F73D05 /* DataViewController.swift */; };
 		9825102E1DF6C64C00F73D05 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9825102D1DF6C64C00F73D05 /* ModelController.swift */; };
 		982510311DF6C64C00F73D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9825102F1DF6C64C00F73D05 /* Main.storyboard */; };
@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		982510241DF6C64C00F73D05 /* Quizzles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizzles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		982510271DF6C64C00F73D05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		982510291DF6C64C00F73D05 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		982510291DF6C64C00F73D05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9825102B1DF6C64C00F73D05 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		9825102D1DF6C64C00F73D05 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		982510301DF6C64C00F73D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				982510271DF6C64C00F73D05 /* AppDelegate.swift */,
-				982510291DF6C64C00F73D05 /* RootViewController.swift */,
+				982510291DF6C64C00F73D05 /* ViewController.swift */,
 				9825102B1DF6C64C00F73D05 /* DataViewController.swift */,
 				9825102D1DF6C64C00F73D05 /* ModelController.swift */,
 				9825102F1DF6C64C00F73D05 /* Main.storyboard */,
@@ -265,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9825102A1DF6C64C00F73D05 /* RootViewController.swift in Sources */,
+				9825102A1DF6C64C00F73D05 /* ViewController.swift in Sources */,
 				9825102E1DF6C64C00F73D05 /* ModelController.swift in Sources */,
 				9825102C1DF6C64C00F73D05 /* DataViewController.swift in Sources */,
 				982510281DF6C64C00F73D05 /* AppDelegate.swift in Sources */,
@@ -513,6 +513,7 @@
 				982510521DF6C64C00F73D05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		982510531DF6C64C00F73D05 /* Build configuration list for PBXNativeTarget "QuizzlesTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +522,7 @@
 				982510551DF6C64C00F73D05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		982510561DF6C64C00F73D05 /* Build configuration list for PBXNativeTarget "QuizzlesUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +531,7 @@
 				982510581DF6C64C00F73D05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

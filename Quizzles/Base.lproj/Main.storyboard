@@ -98,7 +98,7 @@
         <!--TrackProgressView-->
         <scene sceneID="qiJ-Dv-5LD">
             <objects>
-                <viewController id="ed2-dh-Ilc" userLabel="TrackProgressView" sceneMemberID="viewController">
+                <viewController id="ed2-dh-Ilc" userLabel="TrackProgressView" customClass="TrackProgressView" customModule="Quizzles" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FiB-of-gcK"/>
                         <viewControllerLayoutGuide type="bottom" id="sAZ-Ie-A4V"/>

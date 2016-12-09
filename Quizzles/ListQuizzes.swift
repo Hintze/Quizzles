@@ -1,15 +1,16 @@
 //
-//  RootViewController.swift
+//  ListQuizzes.swift
 //  Quizzles
 //
-//  Created by Filip Hintze on 2016-12-06.
+//  Created by dipt on 2016-12-09.
 //  Copyright © 2016 Filip Hintze. All rights reserved.
 //
-
 import UIKit
 
-class ViewController: UIViewController {
-  
+
+
+class ListQuizzesView: UIViewController {
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,4 +24,3 @@ class ViewController: UIViewController {
     
     
 }
-

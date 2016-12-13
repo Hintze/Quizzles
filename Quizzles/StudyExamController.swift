@@ -28,6 +28,7 @@ class StudyExamView: UIViewController {
 
 class EnterCodeView: UIViewController {
     
+    @IBOutlet weak var StartQuiz: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

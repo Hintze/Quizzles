@@ -40,7 +40,21 @@ class StudentsSettingsView: UIViewController {
     
 }
 
-class InfoView: UIViewController {
+class TeacherInfoView: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+}
+
+
+class StudentInfoView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

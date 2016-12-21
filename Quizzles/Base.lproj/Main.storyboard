@@ -42,7 +42,7 @@
                                 </state>
                                 <connections>
                                     <action selector="MakeAQuizButtonWithSender:" destination="gvw-Ms-dx1" eventType="touchUpInside" id="aur-St-twv"/>
-                                    <segue destination="gvw-Ms-dx1" kind="show" id="ACs-Lo-pl9"/>
+                                    <segue destination="koS-oc-NBx" kind="show" id="ACs-Lo-pl9"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ffg-ZT-T7H">
@@ -472,17 +472,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTR-XM-xOE">
-                                <rect key="frame" x="117" y="312" width="140" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.055556461215019226" green="0.027628758922219276" blue="0.010770581662654877" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Make A Quiz">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="MakeAQuizButtonWithSender:" destination="gvw-Ms-dx1" eventType="touchUpInside" id="L4H-yB-DaM"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TX-bp-3eo">
                                 <rect key="frame" x="117" y="375" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -503,17 +492,6 @@
                                 </state>
                                 <connections>
                                     <segue destination="l1i-p8-H2l" kind="show" id="LE4-10-nr9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYc-1W-NSI">
-                                <rect key="frame" x="117" y="312" width="140" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.055556461219999999" green="0.02762875892" blue="0.01077058166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Make A Quiz">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Hf7-aY-0gO" kind="show" id="Gr3-d0-kNj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0p-qY-Ojq">
@@ -540,13 +518,25 @@
                                 <rect key="frame" x="218" y="122" width="115" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atQ-bp-pJr">
+                                <rect key="frame" x="117" y="318" width="140" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.055556461219999999" green="0.02762875892" blue="0.01077058166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Make A Quiz">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Hf7-aY-0gO" kind="show" id="a7k-Ju-A3q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Fas-JB-cwC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="87n-ok-auc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-468" y="-318.89055472263868"/>
+            <point key="canvasLocation" x="325.60000000000002" y="-311.69415292353824"/>
         </scene>
         <!--ListQuizzesView-->
         <scene sceneID="wYO-1z-L9G">
@@ -561,11 +551,11 @@
                                 <rect key="frame" x="0.0" y="56" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NGb-Fl-FjO" id="zNH-tq-0LX">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Historia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8jz-Nc-Hmk">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -620,7 +610,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M9D-eM-m3G" id="EUY-Ur-S5K">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -726,6 +716,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Hf7-aY-0gO" id="XYQ-LQ-o5L"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AGn-Mr-G0n" userLabel="CategoryTextField">
                                 <rect key="frame" x="38" y="197" width="222" height="30"/>
@@ -776,6 +769,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Hf7-aY-0gO" id="haT-mb-gin"/>
+                                </connections>
                             </textField>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZyM-x4-6qj">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -784,13 +780,30 @@
                                     <navigationItem title="Make A Quiz" id="UBB-cK-Yfu" userLabel="Make A Quiz"/>
                                 </items>
                             </navigationBar>
+                            <pickerView hidden="YES" contentMode="scaleToFill" semanticContentAttribute="playback" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YYC-Yf-Puf" userLabel="QuizTypePicker">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.016100121662020683" green="0.0" blue="0.0" alpha="0.6359296000167115" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="#fff"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Hf7-aY-0gO" id="opH-g8-cMo"/>
+                                    <outlet property="delegate" destination="Hf7-aY-0gO" id="RxP-vY-Iya"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="QuizTypePicker" destination="YYC-Yf-Puf" id="sFK-tZ-EPn"/>
+                        <outlet property="QuizeTypeTextBox" destination="2aV-n3-vJk" id="nlS-MX-kHc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pX9-SU-T8E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="497" y="-319"/>
+            <point key="canvasLocation" x="1436" y="-319.79010494752629"/>
         </scene>
         <!--MakeAQuizView2-->
         <scene sceneID="EQj-jL-ABr">
@@ -836,7 +849,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RUH-Q1-IG2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1652" y="-319"/>
+            <point key="canvasLocation" x="2591.1999999999998" y="-319.79010494752629"/>
         </scene>
         <!--MakeAQuizView3-->
         <scene sceneID="NC4-51-SsO">
@@ -863,7 +876,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="90V-Yk-Hh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2649" y="-319"/>
+            <point key="canvasLocation" x="3588" y="-319.79010494752629"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TOM-an-3f3">
@@ -882,6 +895,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B28-hQ-RP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="477.60000000000002" y="-1104.1979010494754"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ePI-nm-BOt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="koS-oc-NBx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4qe-mC-fMd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gvw-Ms-dx1" kind="relationship" relationship="rootViewController" id="naf-eE-SmL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gQc-a6-c0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-615.20000000000005" y="-312.59370314842579"/>
         </scene>
     </scenes>
     <resources>

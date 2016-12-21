@@ -30,7 +30,7 @@
                                 </state>
                                 <connections>
                                     <action selector="MakeAQuizButtonWithSender:" destination="gvw-Ms-dx1" eventType="touchUpInside" id="ksT-cb-V7v"/>
-                                    <segue destination="G3b-l2-0JB" kind="show" id="1Gn-SO-3dC"/>
+                                    <segue destination="nkD-x6-WyS" kind="show" id="1Gn-SO-3dC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYX-2c-JHq">
@@ -120,10 +120,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tBe-Az-jw2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PyU-CV-6SE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="477.60000000000002" y="-1104.1979010494754"/>
+            <point key="canvasLocation" x="1416.8" y="-1104.1979010494754"/>
         </scene>
         <!--EnterCodeView-->
         <scene sceneID="DKu-6m-bFr">
@@ -178,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sip-As-HLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1447" y="-1104"/>
+            <point key="canvasLocation" x="2384.8000000000002" y="-1104.1979010494754"/>
         </scene>
         <!--StudyExamView-->
         <scene sceneID="cDx-uG-fsy">
@@ -196,7 +197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvC-SJ-LfK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2278" y="-1103"/>
+            <point key="canvasLocation" x="3216.8000000000002" y="-1103.2983508245877"/>
         </scene>
         <!--ResultView-->
         <scene sceneID="yN6-vi-Yal">
@@ -230,7 +231,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="csQ-BS-aob" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3170" y="-1103"/>
+            <point key="canvasLocation" x="4108" y="-1103.2983508245877"/>
         </scene>
         <!--Students Settings View-->
         <scene sceneID="P36-Ei-Y12">
@@ -286,6 +287,9 @@
                                 <state key="normal" title="Log Out">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="8oW-be-tco" kind="show" id="QaF-ZX-dY5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -307,14 +311,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aI-dG-seQ">
-                                <rect key="frame" x="67" y="347" width="240" height="133"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Your teacher creates a quiz for you and when doing that a code generates. This code you will enter in the Study or Exam view. After entering the code your quiz will start! Results will be displayed when the quiz is over.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="© Quizzels" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75e-sw-UFl">
                                 <rect key="frame" x="23" y="646" width="53" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -361,7 +357,7 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How does it work?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z80-ot-t6U">
-                                <rect key="frame" x="117" y="323" width="141" height="21"/>
+                                <rect key="frame" x="117" y="308" width="141" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -371,13 +367,21 @@
                                 <rect key="frame" x="87" y="116" width="200" height="166"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aI-dG-seQ">
+                                <rect key="frame" x="74" y="270" width="240" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Your teacher creates a quiz for you and when doing that a code generates. This code you will enter in the Study or Exam view. After entering the code your quiz will start! Results will be displayed when the quiz is over.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bn7-wM-Wiu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="497" y="-1845"/>
+            <point key="canvasLocation" x="496.80000000000001" y="-1845.4272863568217"/>
         </scene>
         <!--Teacher Info View-->
         <scene sceneID="cdD-MF-eNE">
@@ -509,8 +513,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="MakeAQuizButtonWithSender:" destination="gvw-Ms-dx1" eventType="touchUpInside" id="Rqy-ap-fIc"/>
-                                    <segue destination="Hf7-aY-0gO" kind="show" id="7Xx-JV-aSC"/>
+                                    <segue destination="Hf7-aY-0gO" kind="show" id="Gr3-d0-kNj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0p-qY-Ojq">
@@ -679,6 +682,9 @@
                                 <state key="normal" title="Log Out">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="8oW-be-tco" kind="show" id="Cw1-i3-aV5"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vv2-DW-Ucb">
                                 <rect key="frame" x="75" y="243" width="120" height="21"/>
@@ -859,6 +865,24 @@
             </objects>
             <point key="canvasLocation" x="2649" y="-319"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TOM-an-3f3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nkD-x6-WyS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tae-cA-bhM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="G3b-l2-0JB" kind="relationship" relationship="rootViewController" id="QxG-fo-xyu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B28-hQ-RP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="477.60000000000002" y="-1104.1979010494754"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Logo" width="650" height="546"/>
@@ -868,6 +892,7 @@
         <image name="info-256" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Cw1-i3-aV5"/>
         <segue reference="Ija-j9-BZd"/>
     </inferredMetricsTieBreakers>
 </document>

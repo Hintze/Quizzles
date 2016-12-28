@@ -8,7 +8,7 @@
 import UIKit
 
 
-class TrackProgressView: UIViewController {
+class TrackProgressView: UITableViewController {
     
     
     override func viewDidLoad() {

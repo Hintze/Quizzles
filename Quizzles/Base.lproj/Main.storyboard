@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8oW-be-tco">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C48b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8oW-be-tco">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -548,7 +548,7 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="8jz-Nc-Hmk" style="IBUITableViewCellStyleDefault" id="NGb-Fl-FjO">
-                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NGb-Fl-FjO" id="zNH-tq-0LX">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -755,6 +755,9 @@
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Szz-3f-tQB" kind="show" identifier="Continue" id="psY-BZ-r6R"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="akq-B9-Pwi" userLabel="CustomizeTextField">
                                 <rect key="frame" x="38" y="272" width="222" height="30"/>
@@ -780,35 +783,25 @@
                                     <navigationItem title="Make A Quiz" id="UBB-cK-Yfu" userLabel="Make A Quiz"/>
                                 </items>
                             </navigationBar>
-                            <pickerView hidden="YES" contentMode="scaleToFill" semanticContentAttribute="playback" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YYC-Yf-Puf" userLabel="QuizTypePicker">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.016100121662020683" green="0.0" blue="0.0" alpha="0.6359296000167115" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="#fff"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="dataSource" destination="Hf7-aY-0gO" id="opH-g8-cMo"/>
-                                    <outlet property="delegate" destination="Hf7-aY-0gO" id="RxP-vY-Iya"/>
-                                </connections>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="QuizTypePicker" destination="YYC-Yf-Puf" id="sFK-tZ-EPn"/>
+                        <outlet property="QuizName" destination="0vR-01-dGx" id="A6T-XL-2JD"/>
                         <outlet property="QuizeTypeTextBox" destination="2aV-n3-vJk" id="nlS-MX-kHc"/>
+                        <outlet property="quizCategory" destination="AGn-Mr-G0n" id="6cI-Ud-hSc"/>
+                        <outlet property="quizName" destination="0vR-01-dGx" id="yt4-V0-DX3"/>
+                        <outlet property="quizeTypeTextBox" destination="2aV-n3-vJk" id="zwA-lJ-UNY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pX9-SU-T8E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1436" y="-319.79010494752629"/>
+            <point key="canvasLocation" x="1442" y="-312"/>
         </scene>
         <!--MakeAQuizView2-->
         <scene sceneID="EQj-jL-ABr">
             <objects>
-                <viewController id="Szz-3f-tQB" userLabel="MakeAQuizView2" customClass="MakeAQuizView2" customModule="Quizzles" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Szz-3f-tQB" userLabel="MakeAQuizView2" customClass="MakeAQuestionViewController" customModule="Quizzles" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2QJ-af-9EL"/>
                         <viewControllerLayoutGuide type="bottom" id="iJZ-7b-eLN"/>
@@ -828,6 +821,7 @@
                                 <rect key="frame" x="75" y="170" width="240" height="192"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.89370142487046633" green="0.89370142487046633" blue="0.89370142487046633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
@@ -846,6 +840,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="questionfield" destination="SHY-yA-1yt" id="ogI-Br-juD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RUH-Q1-IG2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

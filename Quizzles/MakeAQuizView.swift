@@ -10,13 +10,14 @@ import UIKit
 
 class MakeAQuizView: UIViewController {
     
-    @IBOutlet weak var QuizeTypeTextBox: UITextField!
-    
-    @IBOutlet weak var QuizTypePicker: UIPickerView!
+    @IBOutlet weak var quizeTypeTextBox: UITextField!
+    @IBOutlet weak var quizCategory: UITextField!
+    @IBOutlet weak var quizName: UITextField!
+    @IBOutlet weak var quizTypePicker: UIPickerView!
     
     var list = ["Study","Exam"]
     
-    
+    var newQuiz:Quiz?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,54 +50,30 @@ class MakeAQuizView: UIViewController {
     
     func QuizTypePicker(QuizTypePicker: UIPickerView, didSelectRow row: Int, forComponent component: Int) {
         
-        self.QuizeTypeTextBox.text = self.list[row]
-        self.QuizTypePicker.isHidden = true
+        self.quizeTypeTextBox.text = self.list[row]
+        self.quizTypePicker.isHidden = true
     
     }
     
     func textFieldDidBeginEditing(textField: UITextField) {
      
-        if textField == self.QuizeTypeTextBox  {
-            self.QuizTypePicker.isHidden = false
+        if textField == self.quizeTypeTextBox  {
+            self.quizTypePicker.isHidden = false
             
             textField.endEditing(true)
         }
     
     }
     
-    
-}
-
-class MakeAQuizView2: UIViewController {
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if(identifier == "Continue"){
+            newQuiz = Quiz(name: quizName.text!, quizType: quizeTypeTextBox.text!, subject: quizCategory.text!)
+        }
         
-        
+        if(newQuiz != nil){
+            return true
+        }else{
+            return false
+        }
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-}
-
-class MakeAQuizView3: UIViewController {
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
 }

@@ -6,4 +6,15 @@
 //  Copyright © 2017 Filip Hintze. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class QuizExam {
+    var correctAnswers: Int
+    var wrongAnswers: Int
+    
+    init?(correctAnswers: Int, wrongAnswers: Int){
+        
+        self.correctAnswers = correctAnswers
+        self.wrongAnswers = wrongAnswers
+    }
+}

@@ -27,6 +27,7 @@ class StudyExamView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.becomeFirstResponder()
         if(currentQuestion == 0){
             quizSession = QuizExam(correctAnswers: 0, wrongAnswers: 0)
         }
@@ -83,6 +84,10 @@ class StudyExamView: UIViewController {
         }
         answeredQuiz = true
     }
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        if(event?.subtype == UIEventSubtype.motionShake){
+            performSegue(withIdentifier: "nextQuestion", sender: nil)          }
+   }
     @IBAction func pressedSecondButton(_ sender: Any) {
         if((sender as? UIButton)?.titleLabel?.text == correctAnswer && answeredQuiz == false){
             (sender as? UIButton)?.backgroundColor = UIColor.green

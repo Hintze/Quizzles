@@ -67,7 +67,7 @@ class MakeAQuizView: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "Continue"){
-            var svc = segue.destination as! MakeAQuestionViewController
+            let svc = segue.destination as! MakeAQuestionViewController
             svc.toPass = newQuiz
         }
     }
